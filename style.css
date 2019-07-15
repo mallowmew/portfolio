@@ -27,12 +27,12 @@ div {
     color: var(--main-lightest-color);
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     text-transform: uppercase;
 }
 
-p {
+p, a {
     margin: 0;
 }
 
@@ -99,6 +99,9 @@ a:visited {
 }
 
 .portfolio-window .top-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
     background-color: var(--main-darkest-color);
     color: #ebe8e6;
     text-align: left;
@@ -162,8 +165,20 @@ footer div {
     }
 
     .portfolio-window {
+        overflow: hidden;
         width: 900px;
         height: 506px;
+    }
+
+    .portfolio-window .top-bar {
+        background-color: var(--main-darkest-color);
+        color: #ebe8e6;
+        text-align: left;
+    }
+
+    .portfolio-window .portfolio-item-description {
+        display: none;
+        /* make this appear when the top bar is clicked, once js is involved */
     }
 
     .landing-content h1 {
