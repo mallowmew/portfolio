@@ -6,3 +6,54 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    background-color: #424242;
+    font-family: sans-serif;
+}
+
+div {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-content {
+    position: absolute;    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: auto;
+    color: #FFFFFF;
+}
+
+.landing-content h1 {
+    font-size: 14rem;
+}
+
+.landing-content h2 {
+    font-size: 2rem;
+}
+
+.portfolio-window {
+    position: absolute;    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 60%;
+    height: 60%;
+}
+
+.portfolio-window .top-bar {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+footer div {
+    text-align: center;
+}
