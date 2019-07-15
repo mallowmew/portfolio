@@ -4,12 +4,12 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 body {
     background-color: #424242;
     background: url(./Assets/broken_noise.png) repeat;
-    font-family: 'Lato', sans-serif;
 
 }
 
@@ -18,11 +18,14 @@ div {
     font-size: 1.6rem;
 }
 
+h1, h2, h3, h4, h5, h6, a {
+    text-transform: uppercase;
+}
+
 .container {
     position: relative;
     width: 100%;
     height: 100vh;
-    border: 1px solid #ff0000;
 }
 
 .landing-content {
@@ -36,11 +39,13 @@ div {
 
 .landing-content h1 {
     font-size: 14rem;
+    letter-spacing: 0.2em;
     white-space: nowrap;
 }
 
 .landing-content h2 {
     font-size: 2rem;
+    letter-spacing: 0.6em;
 }
 
 .portfolio-window {
@@ -57,7 +62,6 @@ div {
     margin: 0;
     padding: 6px 12px;
     font-size: 1.8rem;
-    text-transform: uppercase;
 }
 
 .portfolio-window .top-bar {
