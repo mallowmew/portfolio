@@ -1,8 +1,10 @@
 :root {
     --main-darkest-color: #100c08;
     --main-dark-color: #312f2d;
-    --main-light-color: #7d7b7a;
+    --main-light-color: #c3c6c9;
     --main-lightest-color: #eff3f7;
+    --accent-color: #7e2639;
+    --accent-color-tint: #692230;
 }
 
 * {
@@ -32,11 +34,11 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 a:link {
-    color: var(--main-lightest-color);
+    color: var(--accent-color);
 }
 
 a:visited {
-    color: var(--main-lightest-color);
+    color: var(--accent-color-tint);
 }
 
 .container {
