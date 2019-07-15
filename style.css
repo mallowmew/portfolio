@@ -86,11 +86,12 @@ a:visited {
 .landing-content button {
     display: none;
     margin-left: 1rem;
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     padding: 2rem;
     background-color: transparent;
     color: var(--accent-color);
     font-size: 1.6rem;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -126,9 +127,10 @@ a:visited {
 }
 
 .portfolio-window h1 {
-    margin: 0;
-    padding: 6px 12px;
-    font-size: 1.8rem;
+    float: left;
+    margin: 6px 0;
+    padding: 0 12px;
+    font-size: 2rem;
 }
 
 .portfolio-window p {
@@ -138,11 +140,20 @@ a:visited {
 
 .portfolio-window .top-bar {
     position: absolute;
+    overflow: auto;
     top: 0;
     width: 100%;
     background-color: var(--main-darkest-color);
     color: var(--main-lightest-color);
     text-align: left;
+}
+
+.lil-square {
+    float: left;
+    margin: 8px;
+    width: 18px;
+    height: 18px;
+    background-color: var(--main-lightest-color);
 }
 
 .portfolio-window .portfolio-item-description {
