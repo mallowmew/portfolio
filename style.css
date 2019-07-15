@@ -76,6 +76,22 @@ a:visited {
     letter-spacing: 0.15em;
 }
 
+.landing-content button {
+    margin-left: 1rem;
+    border: none;
+    padding: 1rem;
+    padding-left: 0;
+    background-color: transparent;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+#aboutBox {
+    display: none;
+    position: absolute;
+    padding-left: 1rem;
+}
+
 .portfolio-window {
     position: absolute;    
     left: 50%;
@@ -162,6 +178,14 @@ footer div {
 @media screen and (min-width: 900px) {
     .landing-content {
         width: 900px;
+    }
+
+    .landing-content button {
+        margin-left: 0;
+    }
+
+    #aboutBox {
+        padding-left: 0;
     }
 
     .portfolio-window {
