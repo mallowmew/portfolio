@@ -110,13 +110,13 @@ a:visited {
     background-color: var(--main-darkest-color);
 }
 
-.mobileAbout:first-child {
+.about-window:first-child {
     padding-top: 25vh;
 }
 
-.mobileAbout p {
+.about-window p {
     margin-bottom: 1rem;
-    padding-left: 1rem;
+    padding: 0 1rem 0 1rem;
 }
 
 .about-window {
