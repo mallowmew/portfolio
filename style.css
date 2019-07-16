@@ -259,8 +259,6 @@ footer div {
 
     .portfolio-window .portfolio-item-description {
         display: none;
-        
-        /* make this appear when the top bar is clicked, once js is involved */
     }
 
     .portfolio-window:hover .top-bar {
