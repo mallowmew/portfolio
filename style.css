@@ -171,14 +171,6 @@ a:visited {
     transform: translate(-50%, -50%) rotate(-15deg);
 }
 
-.title-bar-button {
-    float: left;
-    margin: 8px;
-    width: 18px;
-    height: 18px;
-    background-color: #ede6d6;
-}
-
 .portfolio-item .portfolio-item-description {
     position: absolute;
     bottom: 0;
