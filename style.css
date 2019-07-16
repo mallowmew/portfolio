@@ -116,7 +116,6 @@ a:visited {
 }
 
 #aboutBox {
-    display:none;
     padding-left: 1rem;
 }
 
@@ -241,7 +240,6 @@ footer div {
     }
 
     #aboutBox {
-        display: none;
         position: absolute;
         padding-left: 0;
     }
