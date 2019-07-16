@@ -192,11 +192,6 @@ footer div {
         width: 100%;
     }
 
-    .portfolio-window {
-        width: 100%;
-        height: 100%;
-    }
-
     .landing-content h1 {
         font-size: 4.2rem;
         letter-spacing: 0.3em;
@@ -205,6 +200,11 @@ footer div {
     .landing-content h2 {
         font-size: 1.8rem;
         letter-spacing: 0.2em;
+    }
+
+    .portfolio-window {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -216,6 +216,18 @@ footer div {
     .landing-content button {
         display: initial;
         margin-left: 0;
+    }
+
+    .landing-content h1 {
+        font-size: 6rem;
+        letter-spacing: 0.4em;
+        padding-left: 0;
+    }
+
+    .landing-content h2 {
+        font-size: 2.2rem;
+        letter-spacing: 0.2em;
+        padding-left: 0;
     }
 
     section[name="about"] {
@@ -245,28 +257,13 @@ footer div {
         /* make this appear when the top bar is clicked, once js is involved */
     }
 
-    .landing-content h1 {
-        font-size: 6rem;
-        letter-spacing: 0.4em;
-        padding-left: 0;
-    }
 
-    .landing-content h2 {
-        font-size: 2.2rem;
-        letter-spacing: 0.2em;
-        padding-left: 0;
-    }
 }
 
 @media screen and (min-width: 1200px) {
 
     .landing-content {
         width: 1000px;
-    }
-
-    .portfolio-window {
-        width: 1000px;
-        height: 562px;
     }
 
     .landing-content h1 {
@@ -278,6 +275,13 @@ footer div {
         font-size: 3rem;
         letter-spacing: 0.2em;
     }
+
+    .portfolio-window {
+        width: 1000px;
+        height: 562px;
+    }
+
+
 }
 
 @media screen and (min-width: 1800px) {
@@ -286,16 +290,16 @@ footer div {
         width: 1200px;
     }
 
-    .portfolio-window {
-        width: 1200px;
-        height: 675px;
-    }
-
     .landing-content h1 {
         font-size: 12rem;
     }
 
     .landing-content h2 {
         font-size: 3rem;
+    }
+
+    .portfolio-window {
+        width: 1200px;
+        height: 675px;
     }
 }
