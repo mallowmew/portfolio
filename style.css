@@ -109,59 +109,63 @@ a:visited {
     background-color: #171412;
 }
 
-.about-window:first-child {
-    padding-top: 25vh;
-}
-
 .about-window p {
     margin-bottom: 1rem;
     padding: 0 1rem 0 1rem;
 }
 
-.about-container {
+.about-content-container {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     padding-left: 1rem;
 }
 
-.about-container p:first-of-type {
+.about-content-container p:first-of-type {
     font-size: 2.2rem;
 }
 
 .portfolio-item {
     position: relative;
     margin: auto;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     width: 100%;
     height: 100vh;
     background: url(./Assets/halftone.png) repeat;
+    overflow: hidden;
 }
 
 .portfolio-item h1 {
-    float: left;
-    margin: 6px 0;
-    padding: 0 12px;
     font-size: 2rem;
 }
 
-.portfolio-item p {
-    margin-bottom: 6px;
+.portfolio-item h1, .portfolio-item h2, .portfolio-item p {
+    margin: 0 12px 0.6em 12px;
 }
 
-.portfolio-item .top-bar {
+.portfolio-item-description {
     position: absolute;
-    overflow: auto;
-    top: 0;
+    bottom: 0;
+    padding: 12px 0;
+    padding-bottom: 42px;
     width: 100%;
-    background-color: #171412;
+    background-color: #171412ee;
+}
+
+.description-content h2 {
+    font-size: 1.6rem;
+}
+
+.description-content p {
     color: #ede6d6;
-    text-align: left;
+    font-size: 1.4rem;
+    text-align: justify;
 }
 
 .portfolio-item-content {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .portfolio-item-content h1 {
@@ -171,25 +175,15 @@ a:visited {
     transform: translate(-50%, -50%) rotate(-15deg);
 }
 
-.portfolio-item .portfolio-item-description {
-    position: absolute;
-    bottom: 0;
-    padding: 12px 12px;
-    width: 100%;
-    background-color: #171412;
-    color: #ede6d6;
-    font-size: 1.4rem;
-    text-align: justify;
-}
-
 footer {
+    margin-top: 60px;
     background-color: #171412;
     height: 20vh;
     min-height: 100px;
 }
 
 footer div {
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
 }
 
@@ -208,22 +202,12 @@ footer div {
         font-size: 1.8rem;
         letter-spacing: 0.2em;
     }
-
-    .portfolio-item {
-        width: 100%;
-        height: 100%;
-    }
 }
 
 /* Tablet landscape */
 @media screen and (min-width: 900px) {
     .landing-content {
         width: 900px;
-    }
-
-    .landing-content button {
-        display: initial;
-        margin-left: 0;
     }
 
     .landing-content h1 {
@@ -240,55 +224,33 @@ footer div {
 
     #about>.container {
         height: 300px;
+        margin-bottom: 10vh;
     }
 
     .about-window {
         width: 900px;
     }
 
-    .about-container {
+    .about-content-container {
         top: 50%;
         transform: translate(0, -50%);
         padding: 2rem;
     }
 
     .portfolio-item {
-        overflow: hidden;
         width: 900px;
         height: 506px;
+        margin: auto;
     }
 
-    .portfolio-item .top-bar {
-        background-color: #171412;
-        color: #ede6d6;
-        text-align: left;
-    }
-
-    .portfolio-item .portfolio-item-description {
-        display: none;
-    }
-
-    .portfolio-item:hover .top-bar {
-        transform: translate(0, 150px);
-    }
-
-    .portfolio-item:hover .portfolio-item-description {
-        display: initial;
-        top: 0;
-        max-height: 150px;
-    }
-
-    .description-content {
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%)
+    .portfolio-item-description {
+        transform: translate(0, 120px);
     }
 
 }
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-
     .landing-content {
         width: 1000px;
     }
@@ -303,10 +265,6 @@ footer div {
         letter-spacing: 0.2em;
     }
 
-    #about>.container {
-        height: 300px;
-    }
-
     .about-window {
         width: 1000px;
     }
@@ -314,6 +272,14 @@ footer div {
     .portfolio-item {
         width: 1000px;
         height: 562px;
+    }
+
+    .portfolio-item-description {
+        transform: translate(0, 200px);
+    }
+
+    .portfolio-item:hover .portfolio-item-description {
+        transform: translate(0, 0px);
     }
 }
 
@@ -330,14 +296,6 @@ footer div {
 
     .landing-content h2 {
         font-size: 3rem;
-    }
-
-    #about>.container {
-        height: 400px;
-    }
-
-    .about-window {
-        width: 1000px;
     }
 
     .portfolio-item {
