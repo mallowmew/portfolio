@@ -254,9 +254,25 @@ footer div {
 
     .portfolio-window .portfolio-item-description {
         display: none;
+        
         /* make this appear when the top bar is clicked, once js is involved */
     }
 
+    .portfolio-window:hover .top-bar {
+        transform: translate(0, 150px);
+    }
+
+    .portfolio-window:hover .portfolio-item-description {
+        display: initial;
+        top: 0;
+        max-height: 150px;
+    }
+
+    .description-content {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%)
+    }
 
 }
 
