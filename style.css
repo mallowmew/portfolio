@@ -19,9 +19,7 @@ html {
 }
 
 body {
-    background-color:var(--main-dark-color);
-    background: url(./Assets/broken_noise.png) repeat;
-
+    background: var(--main-dark-color) url(./Assets/broken_noise.png) repeat;
 }
 
 div {
@@ -119,10 +117,6 @@ a:visited {
     padding: 0 1rem 0 1rem;
 }
 
-.about-window {
-    padding-left: 1rem;
-}
-
 .about-container {
     position: absolute;
     top: 50%;
@@ -146,7 +140,6 @@ a:visited {
 
 .portfolio-window p {
     margin-bottom: 6px;
-
 }
 
 .portfolio-window .top-bar {
