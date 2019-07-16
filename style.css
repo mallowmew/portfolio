@@ -277,7 +277,7 @@ footer div {
 
     .portfolio-window .top-bar {
         background-color: var(--main-darkest-color);
-        color: #ebe8e6;
+        color: var(--main-lightest-color);
         text-align: left;
     }
 
