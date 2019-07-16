@@ -48,6 +48,8 @@ a:visited {
     color: var(--accent-color-tint);
 }
 
+/* Style for screen sizes smaller than 599px - mainly Phones */
+
 .container {
     position: relative;
     width: 100%;
@@ -189,7 +191,6 @@ footer div {
     text-align: center;
 }
 
-/* Above should be for screen sizes smaller than 599px - Phones */
 /* Tablets portrait, big phones */
 @media screen and (min-width: 600px) {
     .landing-content {
