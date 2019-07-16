@@ -185,8 +185,8 @@ footer div {
     text-align: center;
 }
 
-/* Above should be for screen sizes smaller than 599px */
-
+/* Above should be for screen sizes smaller than 599px - Phones */
+/* Tablets portrait, big phones */
 @media screen and (min-width: 600px) {
     .landing-content {
         width: 100%;
@@ -208,6 +208,7 @@ footer div {
     }
 }
 
+/* Tablet landscape */
 @media screen and (min-width: 900px) {
     .landing-content {
         width: 900px;
@@ -276,6 +277,7 @@ footer div {
 
 }
 
+/* Desktop */
 @media screen and (min-width: 1200px) {
 
     .landing-content {
@@ -300,6 +302,7 @@ footer div {
 
 }
 
+/* Big desktop */
 @media screen and (min-width: 1800px) {
 
     .landing-content {
