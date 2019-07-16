@@ -162,7 +162,7 @@ a:visited {
     padding: 12px 12px;
     width: 100%;
     background-color: var(--main-darkest-color);
-    color: #ebe8e6;
+    color: var(--main-lightest-color);
     font-size: 1.4rem;
     text-align: justify;
 }
