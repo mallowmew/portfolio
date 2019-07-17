@@ -51,13 +51,6 @@ a:visited {
     width: 100%;
 }
 
-.centered {
-    position: absolute;    
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .landing-content {
     margin: auto;
     padding-top: 25vh;
@@ -131,12 +124,8 @@ a:visited {
     height:20vh;
 }
 
-.portfolio-item h1 {
-    font-size: 2rem;
-}
-
-.portfolio-item h1, .portfolio-item h2, .portfolio-item p {
-    margin: 0 12px 0.6em 12px;
+.portfolio-item:not(.expanded) .portfolio-item-description {
+    display: none;
 }
 
 .portfolio-item-description {
@@ -148,15 +137,19 @@ a:visited {
     background-color: rgba(23,20,18,0.933);
 }
 
-.portfolio-item:not(.expanded) .portfolio-item-description {
-    display: none;
+.portfolio-item-description h1, .portfolio-item-description h2, .portfolio-item-description p {
+    margin: 0 12px 0.6em 12px;
 }
 
-.description-content h2 {
+.portfolio-item-description h1 {
+    font-size: 2rem;
+}
+
+.portfolio-item-description h2 {
     font-size: 1.6rem;
 }
 
-.description-content p {
+.portfolio-item-description p {
     color: rgba(232, 235, 237, 1);
     font-size: 1.4rem;
     text-align: justify;
@@ -169,6 +162,10 @@ a:visited {
 }
 
 .portfolio-item-content h1 {
+    position: absolute;    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: #505c50;
     font-size: 8rem;
     white-space: nowrap;
