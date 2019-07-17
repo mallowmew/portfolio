@@ -9,12 +9,12 @@ html {
 }
 
 body {
-    background: #6b5f5b url(./Assets/broken_noise.png) repeat;
+    background: rgba(80, 92, 80, 1) url(./Assets/broken_noise.png) repeat;
 }
 
 div {
     font-size: 1.6rem;
-    color: #ede6d6;
+    color: rgba(232, 235, 237, 1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,13 +27,13 @@ p, a {
 }
 
 a:link {
-    color: #9d2933;
+    color: rgba(228, 127, 11, 1);
     text-decoration-line: none;
     font-weight: bold;
 }
 
 a:visited {
-    color: #91353d;
+    color: rgba(206, 126, 33, 1);
 }
 
 /* Style for screen sizes smaller than 599px - mainly Phones */
@@ -65,7 +65,7 @@ a:visited {
 
 .landing-content h1 {
     margin-bottom: 0.6em;
-    border: 2px solid #ede6d6;
+    border: 2px solid rgba(232, 235, 237, 1);
     border-right: none;
     border-left: none;
     padding-left: 1rem;
@@ -76,14 +76,14 @@ a:visited {
 
 .landing-content h2 {
     margin-bottom: 1em;
-    border-bottom: 1px solid #ede6d6;
+    border-bottom: 1px solid rgba(232, 235, 237, 1);
     font-size: 1.8rem;
     padding-left: 1rem;
     letter-spacing: 0.15em;
 }
 
 .landing-content h2 a {
-    color: #ede6d6;
+    color: rgba(232, 235, 237, 1);
 }
 
 .about-container {
@@ -95,7 +95,7 @@ a:visited {
 .about-window {
     width: 100%;
     height: 100%;
-    background-color: #171412;
+    background-color: rgba(23, 20, 18, 1);
 }
 
 .about-window p {
@@ -156,7 +156,7 @@ a:visited {
 }
 
 .description-content p {
-    color: #ede6d6;
+    color: rgba(232, 235, 237, 1);
     font-size: 1.4rem;
     text-align: justify;
 }
@@ -168,7 +168,7 @@ a:visited {
 }
 
 .portfolio-item-content h1 {
-    color: #6b5f5b;
+    color: #505c50;
     font-size: 8rem;
     white-space: nowrap;
     transform: translate(-50%, -50%) rotate(-15deg);
@@ -176,7 +176,7 @@ a:visited {
 
 footer {
     margin-top: 60px;
-    background-color: #171412;
+    background-color: rgba(23, 20, 18, 1);
     height: 20vh;
     min-height: 100px;
 }
@@ -240,8 +240,8 @@ footer div {
         border-radius: 50%;
         width: 44px;
         height: 44px;
-        background-color: #9d2933;
-        color: #ede6d6;
+        background-color: rgba(228, 127, 11, 1);
+        color: rgba(232, 235, 237, 1);
         font-size: 1.2rem;
         text-align: center;
     }
@@ -255,7 +255,7 @@ footer div {
         height: 0px;
         background-color: transparent;
         border: 10px solid transparent;
-        border-bottom: 17.32px solid #ede6d6;
+        border-bottom: 17.32px solid rgba(232, 235, 237, 1);
     }
 
     .portfolio-item {
@@ -295,7 +295,7 @@ footer div {
         right: 0;
         bottom: 0;
         left: 0;
-        background: rgba(157,41,51,0.2);
+        background: rgba(61, 93, 66, 0.2);
         transition: background 96ms;
     }
 
