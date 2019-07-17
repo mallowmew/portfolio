@@ -86,18 +86,6 @@ a:visited {
     color: #ede6d6;
 }
 
-.landing-content button {
-    display: none;
-    margin-left: 1rem;
-    border: 2px solid #9d2933;
-    padding: 2rem;
-    background-color: transparent;
-    color: #9d2933;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 .about-container {
     position: relative;
     width: 100%;
