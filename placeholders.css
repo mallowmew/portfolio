@@ -1,0 +1,43 @@
+/* 
+    background-size: cover; is needed to get the images to do what I want.
+
+    I would prefer to use a rule in style.css like 
+    img { 
+        object-fit: cover; 
+    } 
+    to change the size of the images in one go, but the property is not 
+    supported in IE11. To avoid cluttering the main css I have put the per-id 
+    rules here.
+
+    I could be better off in the long run cropping images or sizing video to 
+    fit the spaces, but this works better for me while the design is in flux.
+*/
+
+#placeholder1, #placeholder2, #placeholder3, #placeholder4, #placeholder5, #placeholder6 {
+    background: transparent no-repeat center center;
+    background-size: cover;
+}
+
+#placeholder1 {
+    background-image: url("./Assets/Placeholder imgs/screen_7680x4320_2016-04-29_04-30-56.jpg");
+}
+
+#placeholder2 {
+    background-image: url("./Assets/Placeholder imgs/Whistler-Nocturne_in_black_and_gold.jpg");
+}
+
+#placeholder3 {
+    background-image: url("./Assets/Placeholder imgs/Cone_Nebula_(NGC_2264)_Star-Forming_Pillar_of_Gas_and_Dust.jpg");
+}
+
+#placeholder4 {
+    background-image: url("./Assets/Placeholder imgs/Anatolii Fomenko - Topological zoo [1967] NwhA5mP.jpg");
+}
+
+#placeholder5 {
+    background-image: url("./Assets/Placeholder imgs/Joseph Mallord William Turner - Norham Castle, Sunrise 1845.jpg");
+}
+
+#placeholder6 {
+    background-image: url("./Assets/Placeholder imgs/maurice sapiro moonglow-3.jpg");
+}
