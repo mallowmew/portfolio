@@ -266,10 +266,12 @@ footer div {
         bottom: 0;
         left: 0;
         background: #9d293333;
+        transition: background 96ms;
     }
 
     .portfolio-item:not(.expanded):hover:before {
         background: transparent;
+        transition: background 96ms;
     }
 
     .portfolio-item-description {
