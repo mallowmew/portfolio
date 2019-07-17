@@ -1,0 +1,44 @@
+/* 
+    background-size: cover; is needed to get images of arbitrary sizes to 
+    cover their entire containing div.
+
+    I would prefer to use a rule in style.css like 
+    .portfolio-item-content img { 
+        object-fit: cover; 
+    } 
+    to change the size of all of the images in one go, but the property is not 
+    supported in IE11. To avoid cluttering the main css I have put the per-id 
+    rules here.
+
+    I could be better off in the long run cropping images or sizing video to 
+    fit the spaces, but this works better for me while the design is in flux.
+*/
+
+#portfolio-placeholder1, #portfolio-placeholder2, #portfolio-placeholder3, #portfolio-placeholder4, #portfolio-placeholder5, #portfolio-placeholder6 {
+    background: transparent no-repeat center center;
+    background-size: cover;
+}
+
+#portfolio-placeholder1 {
+    background-image: url("./assets/placeholder-imgs/screen_7680x4320_2016-04-29_04-30-56.jpg");
+}
+
+#portfolio-placeholder2 {
+    background-image: url("./assets/placeholder-imgs/Whistler-Nocturne_in_black_and_gold.jpg");
+}
+
+#portfolio-placeholder3 {
+    background-image: url("./assets/placeholder-imgs/Cone_Nebula_(NGC_2264)_Star-Forming_Pillar_of_Gas_and_Dust.jpg");
+}
+
+#portfolio-placeholder4 {
+    background-image: url("./assets/placeholder-imgs/Anatolii Fomenko - Topological zoo [1967] NwhA5mP.jpg");
+}
+
+#portfolio-placeholder5 {
+    background-image: url("./assets/placeholder-imgs/Joseph Mallord William Turner - Norham Castle, Sunrise 1845.jpg");
+}
+
+#portfolio-placeholder6 {
+    background-image: url("./assets/placeholder-imgs/maurice sapiro moonglow-3.jpg");
+}

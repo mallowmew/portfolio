@@ -9,12 +9,12 @@ html {
 }
 
 body {
-    background: #6b5f5b url(./Assets/broken_noise.png) repeat;
+    background: rgba(80, 92, 80, 1) url(./assets/broken_noise.png) repeat;
 }
 
 div {
     font-size: 1.6rem;
-    color: #ede6d6;
+    color: rgba(232, 235, 237, 1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,21 +27,27 @@ p, a {
 }
 
 a:link {
-    color: #9d2933;
+    color: rgba(228, 127, 11, 1);
     text-decoration-line: none;
     font-weight: bold;
 }
 
 a:visited {
-    color: #91353d;
+    color: rgba(206, 126, 33, 1);
 }
 
 /* Style for screen sizes smaller than 599px - mainly Phones */
 
-.container {
+.landing-container {
     position: relative;
     width: 100%;
     height: 100vh;
+}
+
+.content-area {
+    position: relative;
+    margin: auto;
+    width: 100%;
 }
 
 .centered {
@@ -59,7 +65,7 @@ a:visited {
 
 .landing-content h1 {
     margin-bottom: 0.6em;
-    border: 2px solid #ede6d6;
+    border: 2px solid rgba(232, 235, 237, 1);
     border-right: none;
     border-left: none;
     padding-left: 1rem;
@@ -70,36 +76,26 @@ a:visited {
 
 .landing-content h2 {
     margin-bottom: 1em;
-    border-bottom: 1px solid #ede6d6;
+    border-bottom: 1px solid rgba(232, 235, 237, 1);
     font-size: 1.8rem;
     padding-left: 1rem;
     letter-spacing: 0.15em;
 }
 
 .landing-content h2 a {
-    color: #ede6d6;
+    color: rgba(232, 235, 237, 1);
 }
 
-.landing-content button {
-    display: none;
-    margin-left: 1rem;
-    border: 2px solid #9d2933;
-    padding: 2rem;
-    background-color: transparent;
-    color: #9d2933;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 .about-window {
     width: 100%;
     height: 100%;
-    background-color: #171412;
-}
-
-.about-window:first-child {
-    padding-top: 25vh;
+    background-color: rgba(23, 20, 18, 1);
 }
 
 .about-window p {
@@ -107,91 +103,86 @@ a:visited {
     padding: 0 1rem 0 1rem;
 }
 
-.about-container {
+.about-content {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     padding-left: 1rem;
 }
 
-.about-container p:first-of-type {
+.about-content p:first-of-type {
     font-size: 2.2rem;
 }
 
-.portfolio-window {
-    margin: auto;
-    margin-bottom: 16px;
-    width: 100%;
-    height: 100%;
+.back-to-top-button {
+    display: none;
 }
 
-.portfolio-window h1 {
-    float: left;
-    margin: 6px 0;
-    padding: 0 12px;
+.portfolio-item {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.portfolio-item:not(.expanded) {
+    height:20vh;
+}
+
+.portfolio-item h1 {
     font-size: 2rem;
 }
 
-.portfolio-window p {
-    margin-bottom: 6px;
+.portfolio-item h1, .portfolio-item h2, .portfolio-item p {
+    margin: 0 12px 0.6em 12px;
 }
 
-.portfolio-window .top-bar {
+.portfolio-item-description {
     position: absolute;
-    overflow: auto;
-    top: 0;
+    bottom: 0;
+    padding: 12px 0;
+    padding-bottom: 42px;
     width: 100%;
-    background-color: #171412;
-    color: #ede6d6;
-    text-align: left;
+    background-color: rgba(23,20,18,0.933);
+}
+
+.portfolio-item:not(.expanded) .portfolio-item-description {
+    display: none;
+}
+
+.description-content h2 {
+    font-size: 1.6rem;
+}
+
+.description-content p {
+    color: rgba(232, 235, 237, 1);
+    font-size: 1.4rem;
+    text-align: justify;
 }
 
 .portfolio-item-content {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .portfolio-item-content h1 {
-    color: #6b5f5b;
+    color: #505c50;
     font-size: 8rem;
     white-space: nowrap;
     transform: translate(-50%, -50%) rotate(-15deg);
 }
 
-.title-bar-button {
-    float: left;
-    margin: 8px;
-    width: 18px;
-    height: 18px;
-    background-color: #ede6d6;
-}
-
-.portfolio-window .portfolio-item-description {
-    position: absolute;
-    bottom: 0;
-    padding: 12px 12px;
-    width: 100%;
-    background-color: #171412;
-    color: #ede6d6;
-    font-size: 1.4rem;
-    text-align: justify;
-}
-
-.portfolio-window {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(./Assets/halftone.png) repeat;
-}
-
 footer {
-    background-color: #171412;
+    margin-top: 60px;
+    background-color: rgba(23, 20, 18, 1);
     height: 20vh;
     min-height: 100px;
 }
 
 footer div {
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
 }
 
@@ -210,22 +201,12 @@ footer div {
         font-size: 1.8rem;
         letter-spacing: 0.2em;
     }
-
-    .portfolio-window {
-        width: 100%;
-        height: 100%;
-    }
 }
 
 /* Tablet landscape */
 @media screen and (min-width: 900px) {
-    .landing-content {
-        width: 900px;
-    }
-
-    .landing-content button {
-        display: initial;
-        margin-left: 0;
+    .content-area {
+        width:900px;
     }
 
     .landing-content h1 {
@@ -240,58 +221,55 @@ footer div {
         padding-left: 0;
     }
 
-    #about>.container {
-        height: 300px;
-    }
-
-    .about-window {
-        width: 900px;
-    }
-
     .about-container {
+        height: 300px;
+        margin-bottom: 10vh;
+    }
+
+    .about-content {
         top: 50%;
         transform: translate(0, -50%);
         padding: 2rem;
     }
 
-    .portfolio-window {
-        overflow: hidden;
-        width: 900px;
+    .back-to-top-button {
+        display: block;
+        position: sticky;
+        top: 90%;
+        left: 90%;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        background-color: rgba(228, 127, 11, 1);
+        color: rgba(232, 235, 237, 1);
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .up-arrow {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+        border: 10px solid transparent;
+        border-bottom: 17.32px solid rgba(232, 235, 237, 1);
+    }
+
+    .portfolio-item {
         height: 506px;
     }
 
-    .portfolio-window .top-bar {
-        background-color: #171412;
-        color: #ede6d6;
-        text-align: left;
+    .portfolio-item-description {
+        transform: translate(0, 120px);
     }
-
-    .portfolio-window .portfolio-item-description {
-        display: none;
-    }
-
-    .portfolio-window:hover .top-bar {
-        transform: translate(0, 150px);
-    }
-
-    .portfolio-window:hover .portfolio-item-description {
-        display: initial;
-        top: 0;
-        max-height: 150px;
-    }
-
-    .description-content {
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%)
-    }
-
 }
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-
-    .landing-content {
+    .content-area {
         width: 1000px;
     }
 
@@ -305,24 +283,43 @@ footer div {
         letter-spacing: 0.2em;
     }
 
-    #about>.container {
-        height: 300px;
-    }
-
-    .about-window {
-        width: 1000px;
-    }
-
-    .portfolio-window {
-        width: 1000px;
+    .portfolio-item {
         height: 562px;
+    }
+
+    .portfolio-item:not(.expanded):before {
+        content:"";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(61, 93, 66, 0.2);
+        transition: background 96ms;
+    }
+
+    .portfolio-item:not(.expanded):hover:before {
+        background: transparent;
+        transition: background 96ms;
+    }
+
+    .portfolio-item-description {
+        height: 33%;
+        z-index: 99;
+        transform: translate(0, 100%);
+        transition: transform 360ms ease-in;
+    }
+
+    .portfolio-item:hover .portfolio-item-description {
+        transform: translate(0, 0px);
+        transition: transform 360ms ease-out;
     }
 }
 
 /* Big desktop */
 @media screen and (min-width: 1800px) {
-
-    .landing-content {
+    .content-area {
         width: 1200px;
     }
 
@@ -334,16 +331,7 @@ footer div {
         font-size: 3rem;
     }
 
-    #about>.container {
-        height: 400px;
-    }
-
-    .about-window {
-        width: 1000px;
-    }
-
-    .portfolio-window {
-        width: 1200px;
+    .portfolio-item {
         height: 675px;
     }
 }
