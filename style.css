@@ -275,11 +275,13 @@ footer div {
     }
 
     .portfolio-item-description {
-        transform: translate(0, 200px);
+        transform: translate(0, 100%);
+        transition: transform 360ms ease-in;
     }
 
     .portfolio-item:hover .portfolio-item-description {
         transform: translate(0, 0px);
+        transition: transform 360ms ease-out;
     }
 }
 
