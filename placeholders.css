@@ -13,31 +13,31 @@
     fit the spaces, but this works better for me while the design is in flux.
 */
 
-#placeholder1, #placeholder2, #placeholder3, #placeholder4, #placeholder5, #placeholder6 {
+#portfolio-placeholder1, #portfolio-placeholder2, #portfolio-placeholder3, #portfolio-placeholder4, #portfolio-placeholder5, #portfolio-placeholder6 {
     background: transparent no-repeat center center;
     background-size: cover;
 }
 
-#placeholder1 {
+#portfolio-placeholder1 {
     background-image: url("./assets/placeholder-imgs/screen_7680x4320_2016-04-29_04-30-56.jpg");
 }
 
-#placeholder2 {
+#portfolio-placeholder2 {
     background-image: url("./assets/placeholder-imgs/Whistler-Nocturne_in_black_and_gold.jpg");
 }
 
-#placeholder3 {
+#portfolio-placeholder3 {
     background-image: url("./assets/placeholder-imgs/Cone_Nebula_(NGC_2264)_Star-Forming_Pillar_of_Gas_and_Dust.jpg");
 }
 
-#placeholder4 {
+#portfolio-placeholder4 {
     background-image: url("./assets/placeholder-imgs/Anatolii Fomenko - Topological zoo [1967] NwhA5mP.jpg");
 }
 
-#placeholder5 {
+#portfolio-placeholder5 {
     background-image: url("./assets/placeholder-imgs/Joseph Mallord William Turner - Norham Castle, Sunrise 1845.jpg");
 }
 
-#placeholder6 {
+#portfolio-placeholder6 {
     background-image: url("./assets/placeholder-imgs/maurice sapiro moonglow-3.jpg");
 }
