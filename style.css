@@ -275,6 +275,8 @@ footer div {
     }
 
     .portfolio-item-description {
+        height: 33%;
+        z-index: 99;
         transform: translate(0, 100%);
         transition: transform 360ms ease-in;
     }
