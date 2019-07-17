@@ -186,6 +186,10 @@ footer div {
     text-align: center;
 }
 
+footer p {
+    margin-bottom: 36px;
+}
+
 /* Tablets portrait, big phones */
 @media screen and (min-width: 600px) {
     .landing-content {
