@@ -1,11 +1,12 @@
 /* 
-    background-size: cover; is needed to get the images to do what I want.
+    background-size: cover; is needed to get images of arbitrary sizes to 
+    cover their entire containing div.
 
     I would prefer to use a rule in style.css like 
-    img { 
+    .portfolio-item-content img { 
         object-fit: cover; 
     } 
-    to change the size of the images in one go, but the property is not 
+    to change the size of all of the images in one go, but the property is not 
     supported in IE11. To avoid cluttering the main css I have put the per-id 
     rules here.
 
