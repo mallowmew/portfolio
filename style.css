@@ -4,7 +4,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', Fira, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, a {
     margin: 0;
+    font-family: 'Fira Sans Condensed' Fira, sans-serif;
 }
 
 a:link {
