@@ -1,28 +1,28 @@
 /* 
-    background-size: cover; is needed to get images of arbitrary sizes to 
-    cover their entire containing div.
+  background-size: cover; is needed to get images of arbitrary sizes to 
+  cover their entire containing div.
 
-    I would prefer to use a rule in style.css like 
-    .portfolio-item-content img { 
-        object-fit: cover; 
-    } 
-    to change the size of all of the images in one go, but the property is not 
-    supported in IE11. To avoid cluttering the main css I have put the per-id 
-    rules here.
+  I would prefer to use a rule in style.css like 
+  .portfolio-item-content img { 
+      object-fit: cover; 
+  } 
+  to change the size of all of the images in one go, but the property is not 
+  supported in IE11. To avoid cluttering the main css I have put the per-id 
+  rules here.
 
-    I could be better off in the long run cropping images or sizing video to 
-    fit the spaces, but this works better for me while the design is in flux.
+  I could be better off in the long run cropping images or sizing video to 
+  fit the spaces, but this works better for me while the design is in flux.
 */
 
 #portfolio-placeholder1, #portfolio-placeholder2, #portfolio-placeholder3, #portfolio-placeholder4, #portfolio-placeholder5, #portfolio-placeholder6 {
-    background: transparent no-repeat center center;
-    background-size: cover;
+  background: transparent no-repeat center center;
+  background-size: cover;
 }
 
 #portfolio-placeholder1 {
-    background-image: url("https://mallowmew.github.io/assets/project2-screenshot-2019-08-09.png");
+  background-image: url("https://mallowmew.github.io/assets/project2-screenshot-2019-08-09.png");
 }
 
 #portfolio-placeholder2 {
-    background-image: url("https://mallowmew.github.io/assets/project3-screenshot-2019-08-24.png");
+  background-image: url("https://mallowmew.github.io/assets/project3-screenshot-2019-08-24.png");
 }
