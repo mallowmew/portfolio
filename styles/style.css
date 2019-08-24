@@ -254,6 +254,7 @@ footer p {
 
   .portfolio-item {
     height: 506px;
+    transition: height 300ms;
   }
 
   .portfolio-item-description {
@@ -279,6 +280,7 @@ footer p {
 
   .portfolio-item {
     height: 562px;
+    transition: height 300ms;
   }
 
   .portfolio-item[data-state=closed]:before {
@@ -327,5 +329,6 @@ footer p {
 
   .portfolio-item {
     height: 675px;
+    transition: height 300ms;
   }
 }
