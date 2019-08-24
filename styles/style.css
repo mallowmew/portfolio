@@ -120,11 +120,11 @@ a:visited {
   overflow: hidden;
 }
 
-.portfolio-item:not(.expanded) {
+.portfolio-item[data-state=closed] {
   height:20vh;
 }
 
-.portfolio-item:not(.expanded) .portfolio-item-description {
+.portfolio-item[data-state=closed] .portfolio-item-description {
   display: none;
 }
 
@@ -281,7 +281,7 @@ footer p {
     height: 562px;
   }
 
-  .portfolio-item:not(.expanded):before {
+  .portfolio-item[data-state=closed]:before {
     content:"";
     display: block;
     position: absolute;
@@ -293,7 +293,7 @@ footer p {
     transition: background 96ms;
   }
 
-  .portfolio-item:not(.expanded):hover:before {
+  .portfolio-item[data-state=closed]:hover:before {
     background: transparent;
     transition: background 96ms;
   }

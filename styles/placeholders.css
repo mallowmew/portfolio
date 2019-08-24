@@ -20,9 +20,11 @@
 }
 
 #portfolio-placeholder1 {
-  background-image: url("https://mallowmew.github.io/images/project2-screenshot-2019-08-09.png");
+  background-image: url('../images/project2-screenshot-2019-08-09.png');
+  /* background-image: url("https://mallowmew.github.io/images/project2-screenshot-2019-08-09.png"); */
 }
 
 #portfolio-placeholder2 {
-  background-image: url("https://mallowmew.github.io/images/project3-screenshot-2019-08-24.png");
+  background-image: url('../images/project3-screenshot-2019-08-24.png');
+  /* background-image: url("https://mallowmew.github.io/images/project3-screenshot-2019-08-24.png"); */
 }
