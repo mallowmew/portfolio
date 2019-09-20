@@ -7,17 +7,12 @@
 @import 'utils/_functions';
 @import 'layout/placeholders';
 
-* {
-  box-sizing: border-box;
-}
-
 html {
-  font-size: 62.5%;
-  font-family: 'Fira Sans', Fira, sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: 'Fira Sans', Fira, sans-serif;
   background: rgba(23, 20, 18, 1) url("https://mallowmew.github.io/images/broken_noise.png") repeat;
 }
 
