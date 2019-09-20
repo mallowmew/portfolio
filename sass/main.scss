@@ -2,9 +2,10 @@
 @import 'base/other-resets';
 @import 'base/ie-compatibility';
 @import 'base/typography';
-@import 'utils/_variables';
-@import 'utils/_mixins';
-@import 'utils/_functions';
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/functions';
+@import 'components/back-to-top-button';
 @import 'layout/placeholders';
 @import 'layout/footer';
 
@@ -107,14 +108,10 @@ a:visited {
   top: 50%;
   transform: translate(0, -50%);
   padding-left: 1rem;
-}
-
-.about-content p:first-of-type {
-  font-size: 2.2rem;
-}
-
-.back-to-top-button {
-  display: none;
+  
+  p:first-of-type {
+    font-size: 2.2rem;
+  }
 }
 
 .portfolio-item {
@@ -211,32 +208,6 @@ a:visited {
     top: 50%;
     transform: translate(0, -50%);
     padding: 2rem;
-  }
-
-  .back-to-top-button {
-    display: block;
-    position: sticky;
-    top: 90%;
-    left: 90%;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    background-color: $link;
-    color: $lightest;
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .up-arrow {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -25%);
-    width: 0px;
-    height: 0px;
-    background-color: transparent;
-    border: 10px solid transparent;
-    border-bottom: 17.32px solid $lightest;
   }
 
   .portfolio-item {

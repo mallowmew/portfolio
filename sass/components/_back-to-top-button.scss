@@ -1,0 +1,29 @@
+.back-to-top-button {
+  display: none;
+
+  @include for-tablet-landscape-up {
+    display: block;
+    position: sticky;
+    top: 90%;
+    left: 90%;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: $link;
+    color: $lightest;
+    font-size: 1.2rem;
+    text-align: center;
+
+    .up-arrow {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -25%);
+      width: 0px;
+      height: 0px;
+      background-color: transparent;
+      border: 10px solid transparent;
+      border-bottom: 17.32px solid $lightest;
+    }
+  }
+}
