@@ -1,0 +1,19 @@
+footer {
+  margin-top: 60px;
+  background-color: $footerColor;
+  height: 100%;
+  min-height: 200px;
+  
+  div {
+    padding-top: 60px;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 36px;
+  }
+  
+  @include for-tablet-portrait-up {
+    height: 20vh;
+  }
+}

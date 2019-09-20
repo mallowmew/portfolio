@@ -6,6 +6,7 @@
 @import 'utils/_mixins';
 @import 'utils/_functions';
 @import 'layout/placeholders';
+@import 'layout/footer';
 
 html {
   scroll-behavior: smooth;
@@ -166,22 +167,6 @@ a:visited {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-
-footer {
-  margin-top: 60px;
-  background-color: $footerColor;
-  height: 20vh;
-  min-height: 100px;
-}
-
-footer div {
-  padding-top: 60px;
-  text-align: center;
-}
-
-footer p {
-  margin-bottom: 36px;
 }
 
 @include for-tablet-portrait-up {
