@@ -59,29 +59,29 @@ a:visited {
   margin: auto;
   padding-top: 25vh;
   width: 100%;
-}
+ 
+  h1 {
+    margin-bottom: 0.6em;
+    border-image: linear-gradient(90deg, $textColor 0%, transparent 100%) 1 stretch;
+    border-top: 1px solid;
+    border-left: 1rem solid;
+    padding-left: 1rem;
+    font-size: 4rem;
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+  }
 
-.landing-content h1 {
-  margin-bottom: 0.6em;
-  border-image: linear-gradient(90deg, $textColor 0%, transparent 100%) 1 stretch;
-  border-top: 1px solid;
-  border-left: 1rem solid;
-  padding-left: 1rem;
-  font-size: 4rem;
-  letter-spacing: 0.15em;
-  white-space: nowrap;
-}
+  h2 {
+    margin-bottom: 1em;
+    border-left: 1rem solid $textColor;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    letter-spacing: 0.15em;
+  }
 
-.landing-content h2 {
-  margin-bottom: 1em;
-  border-left: 1rem solid $textColor;
-  font-size: 1.8rem;
-  padding-left: 1rem;
-  letter-spacing: 0.15em;
-}
-
-.landing-content h2 a {
-  color: $textColor;
+  h2 a {
+    color: $textColor;
+  }
 }
 
 .about-container {
@@ -122,10 +122,10 @@ a:visited {
 
 .portfolio-item[data-state=closed] {
   height:20vh;
-}
 
-.portfolio-item[data-state=closed] .portfolio-item-description {
-  display: none;
+  .portfolio-item-description {
+    display: none;
+  }
 }
 
 .portfolio-item-description {
@@ -135,27 +135,27 @@ a:visited {
   padding-bottom: 42px;
   width: 100%;
   background-color: transparentize($color: $dark, $amount: 0.1);
-}
 
-.portfolio-item-description h1, .portfolio-item-description h2, .portfolio-item-description p {
-  margin: 0 12px 0.6em 12px;
-}
+  h1, h2, h3, p {
+    margin: 0 12px 0.6em 12px;
+  }
 
-.portfolio-item-description h1 {
-  font-size: 2rem;
-  border-left: 1rem solid $textColor;
-  padding-left: 0.5rem;
-}
+  h1 {
+    font-size: 2rem;
+    border-left: 1rem solid $textColor;
+    padding-left: 0.5rem;
+  }
 
-.portfolio-item-description h2 {
-  font-size: 1.6rem;
-  text-transform: none;
-}
+  h2 {
+    font-size: 1.6rem;
+    text-transform: none;
+  }
 
-.portfolio-item-description p {
-  color: $textColor;
-  font-size: 1.4rem;
-  text-align: justify;
+  p {
+    color: $textColor;
+    font-size: 1.4rem;
+    text-align: justify;
+  }
 }
 
 .portfolio-item-content {
@@ -167,16 +167,16 @@ a:visited {
 @include for-tablet-portrait-up {
   .landing-content {
     width: 100%;
-  }
+  
+    h1 {
+      font-size: 4.2rem;
+      letter-spacing: 0.3em;
+    }
 
-  .landing-content h1 {
-    font-size: 4.2rem;
-    letter-spacing: 0.3em;
-  }
-
-  .landing-content h2 {
-    font-size: 1.8rem;
-    letter-spacing: 0.2em;
+    h2 {
+      font-size: 1.8rem;
+      letter-spacing: 0.2em;
+    }
   }
 }
 
@@ -185,16 +185,18 @@ a:visited {
     width:900px;
   }
 
-  .landing-content h1 {
-    font-size: 6rem;
-    letter-spacing: 0.4em;
-    padding-left: 2rem;
-  }
-
-  .landing-content h2 {
-    font-size: 2.2rem;
-    letter-spacing: 0.2em;
-    padding-left: 2rem;
+  .landing-content {
+    h1 {
+      font-size: 6rem;
+      letter-spacing: 0.4em;
+      padding-left: 2rem;
+    }
+    
+    h2 {
+      font-size: 2.2rem;
+      letter-spacing: 0.2em;
+      padding-left: 2rem;
+    }
   }
 
   .about-container {
@@ -223,14 +225,16 @@ a:visited {
     width: 1000px;
   }
 
-  .landing-content h1 {
-    font-size: 10rem;
-    letter-spacing: 0.4em;
-  }
+  .landing-content {
+    h1 {
+      font-size: 10rem;
+      letter-spacing: 0.4em;
+    }
 
-  .landing-content h2 {
-    font-size: 3rem;
-    letter-spacing: 0.2em;
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 0.2em;
+    }
   }
 
   .portfolio-item {
@@ -273,12 +277,14 @@ a:visited {
     width: 1200px;
   }
 
-  .landing-content h1 {
-    font-size: 12rem;
-  }
+  .landing-content {
+    h1 {
+      font-size: 12rem;
+    }
 
-  .landing-content h2 {
-    font-size: 3rem;
+    h2 {
+      font-size: 3rem;
+    }
   }
 
   .portfolio-item {
