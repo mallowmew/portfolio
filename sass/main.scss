@@ -184,8 +184,7 @@ footer p {
   margin-bottom: 36px;
 }
 
-/* Tablets portrait, big phones */
-@media screen and (min-width: 600px) {
+@include for-tablet-portrait-up {
   .landing-content {
     width: 100%;
   }
@@ -201,8 +200,7 @@ footer p {
   }
 }
 
-/* Tablet landscape */
-@media screen and (min-width: 900px) {
+@include for-tablet-landscape-up {
   .content-area {
     width:900px;
   }
@@ -266,8 +264,7 @@ footer p {
   }
 }
 
-/* Desktop */
-@media screen and (min-width: 1200px) {
+@include for-desktop-up {
   .content-area {
     width: 1000px;
   }
@@ -317,8 +314,7 @@ footer p {
   }
 }
 
-/* Big desktop */
-@media screen and (min-width: 1800px) {
+@include for-big-desktop-up {
   .content-area {
     width: 1200px;
   }
