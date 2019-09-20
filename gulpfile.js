@@ -21,6 +21,6 @@ gulp.task('sass-mapped', function(done) {
 })
 
 gulp.task('sass:watch', function(done) {
-  gulp.watch(['sass/*.scss', '*.html'], gulp.series('sass-mapped'))
+  gulp.watch(['sass/*.scss', 'sass/*/*.scss', '*.html'], gulp.series('sass-mapped'))
   done()
 })
