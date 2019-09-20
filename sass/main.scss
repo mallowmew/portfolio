@@ -13,12 +13,12 @@ html {
 
 body {
   font-family: 'Fira Sans', Fira, sans-serif;
-  background: rgba(23, 20, 18, 1) url("https://mallowmew.github.io/images/broken_noise.png") repeat;
+  background: $backgroundColor url("https://mallowmew.github.io/images/broken_noise.png") repeat;
 }
 
 div {
   font-size: 1.6rem;
-  color: rgba(232, 235, 237, 1);
+  color: $textColor;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,13 +32,13 @@ p, a {
 }
 
 a:link {
-  color: rgba(228, 127, 11, 1);
+  color: $linkColor;
   text-decoration-line: none;
   font-weight: bold;
 }
 
 a:visited {
-  color: rgba(206, 126, 33, 1);
+  color: $visitedColor;
 }
 
 /* Style for screen sizes smaller than 599px - mainly Phones */
@@ -63,7 +63,7 @@ a:visited {
 
 .landing-content h1 {
   margin-bottom: 0.6em;
-  border-image: linear-gradient(90deg, rgba(232,235,237,1) 0%, rgba(0,0,0,0) 100%) 1 stretch;
+  border-image: linear-gradient(90deg, $textColor 0%, transparent 100%) 1 stretch;
   border-top: 1px solid;
   border-left: 1rem solid;
   padding-left: 1rem;
@@ -74,14 +74,14 @@ a:visited {
 
 .landing-content h2 {
   margin-bottom: 1em;
-  border-left: 1rem solid rgba(232, 235, 237, 1);
+  border-left: 1rem solid $textColor;
   font-size: 1.8rem;
   padding-left: 1rem;
   letter-spacing: 0.15em;
 }
 
 .landing-content h2 a {
-  color: rgba(232, 235, 237, 1);
+  color: $textColor;
 }
 
 .about-container {
@@ -93,12 +93,12 @@ a:visited {
 .about-window {
   width: 100%;
   height: 100%;
-  background-color: rgba(23, 20, 18, 1);
-}
+  background-color: $aboutBoxColor;
 
-.about-window p {
-  margin-bottom: 1rem;
-  padding: 0 1rem 0 1rem;
+  p {
+    margin-bottom: 1rem;
+    padding: 0 1rem 0 1rem;
+  }
 }
 
 .about-content {
@@ -138,7 +138,7 @@ a:visited {
   padding: 12px 0;
   padding-bottom: 42px;
   width: 100%;
-  background-color: rgba(23,20,18,0.933);
+  background-color: transparentize($color: $dark, $amount: 0.1);
 }
 
 .portfolio-item-description h1, .portfolio-item-description h2, .portfolio-item-description p {
@@ -147,7 +147,7 @@ a:visited {
 
 .portfolio-item-description h1 {
   font-size: 2rem;
-  border-left: 1rem solid rgba(232,235,237,1);
+  border-left: 1rem solid $textColor;
   padding-left: 0.5rem;
 }
 
@@ -157,7 +157,7 @@ a:visited {
 }
 
 .portfolio-item-description p {
-  color: rgba(232, 235, 237, 1);
+  color: $textColor;
   font-size: 1.4rem;
   text-align: justify;
 }
@@ -170,7 +170,7 @@ a:visited {
 
 footer {
   margin-top: 60px;
-  background-color: rgba(23, 20, 18, 1);
+  background-color: $footerColor;
   height: 20vh;
   min-height: 100px;
 }
@@ -238,8 +238,8 @@ footer p {
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    background-color: rgba(228, 127, 11, 1);
-    color: rgba(232, 235, 237, 1);
+    background-color: $link;
+    color: $lightest;
     font-size: 1.2rem;
     text-align: center;
   }
@@ -253,7 +253,7 @@ footer p {
     height: 0px;
     background-color: transparent;
     border: 10px solid transparent;
-    border-bottom: 17.32px solid rgba(232, 235, 237, 1);
+    border-bottom: 17.32px solid $lightest;
   }
 
   .portfolio-item {
@@ -295,7 +295,7 @@ footer p {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(61, 93, 66, 0.2);
+    background: transparentize($color: $tint, $amount: 0.8);
     transition: background 96ms;
   }
 
