@@ -6,8 +6,9 @@
 @import 'utils/mixins';
 @import 'utils/functions';
 @import 'components/back-to-top-button';
-@import 'layout/placeholders';
+@import 'layout/header';
 @import 'layout/footer';
+@import 'layout/placeholders';
 
 html {
   scroll-behavior: smooth;
@@ -43,74 +44,12 @@ a:visited {
   color: $visitedColor;
 }
 
-.landing-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
 .content-area {
   position: relative;
   margin: auto;
   width: 100%;
 }
 
-.landing-content {
-  margin: auto;
-  padding-top: 25vh;
-  width: 100%;
- 
-  h1 {
-    margin-bottom: 0.6em;
-    border-image: linear-gradient(90deg, $textColor 0%, transparent 100%) 1 stretch;
-    border-top: 1px solid;
-    border-left: 1rem solid;
-    padding-left: 1rem;
-    font-size: 4rem;
-    letter-spacing: 0.15em;
-    white-space: nowrap;
-  }
-
-  h2 {
-    margin-bottom: 1em;
-    border-left: 1rem solid $textColor;
-    font-size: 1.8rem;
-    padding-left: 1rem;
-    letter-spacing: 0.15em;
-  }
-
-  h2 a {
-    color: $textColor;
-  }
-}
-
-.about-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.about-window {
-  width: 100%;
-  height: 100%;
-  background-color: $aboutBoxColor;
-
-  p {
-    margin-bottom: 1rem;
-    padding: 0 1rem 0 1rem;
-  }
-}
-
-.about-content {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  padding-left: 1rem;
-  
-  p:first-of-type {
-    font-size: 2.2rem;
-  }
-}
 
 .portfolio-item {
   position: relative;
