@@ -8,6 +8,7 @@
 @import 'components/back-to-top-button';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/portfolio-items';
 @import 'layout/placeholders';
 
 html {
@@ -50,112 +51,9 @@ a:visited {
   width: 100%;
 }
 
-
-.portfolio-item {
-  position: relative;
-  margin: auto;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.portfolio-item[data-state=closed] {
-  height:20vh;
-
-  .portfolio-item-description {
-    display: none;
-  }
-}
-
-.portfolio-item-description {
-  position: absolute;
-  bottom: 0;
-  padding: 12px 0;
-  padding-bottom: 42px;
-  width: 100%;
-  background-color: transparentize($color: $dark, $amount: 0.1);
-
-  h1, h2, h3, p {
-    margin: 0 12px 0.6em 12px;
-  }
-
-  h1 {
-    font-size: 2rem;
-    border-left: 1rem solid $textColor;
-    padding-left: 0.5rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-    text-transform: none;
-  }
-
-  p {
-    color: $textColor;
-    font-size: 1.4rem;
-    text-align: justify;
-  }
-}
-
-.portfolio-item-content {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-@include for-tablet-portrait-up {
-  .landing-content {
-    width: 100%;
-  
-    h1 {
-      font-size: 4.2rem;
-      letter-spacing: 0.3em;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      letter-spacing: 0.2em;
-    }
-  }
-}
-
 @include for-tablet-landscape-up {
   .content-area {
     width:900px;
-  }
-
-  .landing-content {
-    h1 {
-      font-size: 6rem;
-      letter-spacing: 0.4em;
-      padding-left: 2rem;
-    }
-    
-    h2 {
-      font-size: 2.2rem;
-      letter-spacing: 0.2em;
-      padding-left: 2rem;
-    }
-  }
-
-  .about-container {
-    height: 300px;
-    margin-bottom: 10vh;
-  }
-
-  .about-content {
-    top: 50%;
-    transform: translate(0, -50%);
-    padding: 2rem;
-  }
-
-  .portfolio-item {
-    height: 506px;
-    transition: height 300ms;
-  }
-
-  .portfolio-item-description {
-    transform: translate(0, 120px);
   }
 }
 
@@ -163,71 +61,25 @@ a:visited {
   .content-area {
     width: 1000px;
   }
-
-  .landing-content {
-    h1 {
-      font-size: 10rem;
-      letter-spacing: 0.4em;
-    }
-
-    h2 {
-      font-size: 3rem;
-      letter-spacing: 0.2em;
-    }
-  }
-
-  .portfolio-item {
-    height: 562px;
-    transition: height 300ms;
-  }
-
-  .portfolio-item[data-state=closed]:before {
-    content:"";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: transparentize($color: $tint, $amount: 0.8);
-    transition: background 96ms;
-  }
-
-  .portfolio-item[data-state=closed]:hover:before {
-    background: transparent;
-    transition: background 96ms;
-  }
-
-  .portfolio-item-description {
-    height: 33%;
-    z-index: 99;
-    transform: translate(0, 100%);
-    transition: transform 360ms ease-in;
-  }
-
-  .portfolio-item:hover .portfolio-item-description {
-    transform: translate(0, 0px);
-    transition: transform 360ms ease-out;
-  }
 }
 
-@include for-big-desktop-up {
-  .content-area {
-    width: 1200px;
-  }
+// @include for-big-desktop-up {
+//   .content-area {
+//     width: 1200px;
+//   }
 
-  .landing-content {
-    h1 {
-      font-size: 12rem;
-    }
+//   .header {
+//     h1 {
+//       font-size: 12rem;
+//     }
 
-    h2 {
-      font-size: 3rem;
-    }
-  }
+//     h2 {
+//       font-size: 3rem;
+//     }
+//   }
 
-  .portfolio-item {
-    height: 675px;
-    transition: height 300ms;
-  }
-}
+//   .portfolio-item {
+//     height: 675px;
+//     transition: height 300ms;
+//   }
+// }
