@@ -1,0 +1,14 @@
+$darkest: #000000;
+$dark: #171412;
+$light: #c7cacc;
+$lightest: #e8ebed;
+$link: #e47f0b;
+$tint: #3d5d42;
+
+$backgroundColor: $darkest;
+$headingColor: $light;
+$textColor: $light;
+$emphasisColor: $lightest;
+$linkColor: $link;
+$visitedColor: scale-color($link, $lightness: -25%, $saturation: -25%);
+$footerColor: $dark;
