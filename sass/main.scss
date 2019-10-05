@@ -9,10 +9,6 @@
 @import 'layout/portfolio-items';
 @import 'layout/placeholders';
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Fira Sans', Fira, sans-serif;
   background: $backgroundColor;
@@ -30,7 +26,6 @@ h1 {
 
 p, a {
   margin: 20px 0;
-  font-family: 'Fira Sans Condensed' Fira, sans-serif;
   font-weight: 300;
 }
 
