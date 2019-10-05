@@ -7,14 +7,10 @@
       object-fit: cover; 
   } 
   to change the size of all of the images in one go, but the property is not 
-  supported in IE11. To avoid cluttering the main css I have put the per-id 
-  rules here.
-
-  I could be better off in the long run cropping images or sizing video to 
-  fit the spaces, but this works better for me while the design is in flux.
+  supported in IE11.
 */
 
-#portfolio-image1, #portfolio-image2, #portfolio-image3, #portfolio-image4, #portfolio-image5, #portfolio-image6 {
+.portfolio-item-image {
   background: transparent no-repeat center center;
   background-size: cover;
 }
