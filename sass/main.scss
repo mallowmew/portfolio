@@ -53,10 +53,10 @@ a:visited {
   }
 
   @include for-tablet-landscape-up {
-    width:900px;
+    width: 900px;
   }
   
   @include for-desktop-up {
-    width: 1000px;
+    width: 1200px;
   }
 }
