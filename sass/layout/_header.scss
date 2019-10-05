@@ -38,7 +38,7 @@
 }
 
 .about-content {
-  font-weight: 300;
+  margin: 0 0 60px 0;
   
   p:first-of-type {
     margin-top: 60px;
@@ -47,23 +47,21 @@
   }
 
   p {
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
     font-size: 1.6rem;
     font-weight: 400;
   }
 }
 
 @include for-tablet-portrait-up {
-  .header {
-    width: 100%;
-  
+  .header-content {
     h1 {
-      font-size: 4.2rem;
+      font-size: 4.8rem;
       letter-spacing: 0.3em;
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       letter-spacing: 0.2em;
     }
   }
@@ -71,28 +69,37 @@
 
 @include for-tablet-landscape-up {
   .header {
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .header-content {
     h1 {
-      font-size: 6rem;
+      margin: 30px 0;
+      font-size: 4rem;
       letter-spacing: 0.4em;
-      padding-left: 2rem;
     }
     
     h2 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       letter-spacing: 0.2em;
-      padding-left: 2rem;
     }
   }
 
-  .about-container {
-    height: 300px;
-    margin-bottom: 10vh;
-  }
-
   .about-content {
-    top: 50%;
-    transform: translate(0, -50%);
-    padding: 2rem;
+    margin: 0 0 30px 0;
+
+    p:first-of-type {
+      margin-top: 40px;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  
+    p {
+      margin: 10px 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
   }
 }
 
