@@ -45,6 +45,11 @@
 }
 
 @include for-tablet-portrait-up {
+  .header {
+    padding: 30px 20px;
+    height: auto;
+  }
+  
   .header-content {
     h1 {
       font-size: 4.8rem;
