@@ -2,7 +2,9 @@
   "name": "portfolio-site",
   "author": "Cat Stone",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "gulp sass-watch": "gulp sass:watch"
   },
   "repository": {
     "type": "git",
