@@ -1,0 +1,58 @@
+@import 'base/normalize';
+@import 'base/other-resets';
+@import 'base/typography';
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/functions';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/portfolio-items';
+@import 'layout/portfolio-images';
+
+body {
+  font-family: 'Fira Sans', Fira, sans-serif;
+  background: $backgroundColor;
+  color: $textColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+p, a {
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+a:link {
+  color: $linkColor;
+  text-decoration-line: none;
+  font-weight: 500;
+}
+
+a:visited {
+  color: $visitedColor;
+}
+
+.content-area {
+  position: relative;
+  margin: auto;
+  width: 100%;
+
+  @include for-tablet-portrait-up {
+    width: 80%;
+  }
+
+  @include for-tablet-landscape-up {
+    width: 900px;
+  }
+  
+  @include for-desktop-up {
+    width: 1200px;
+  }
+}
