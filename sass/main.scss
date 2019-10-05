@@ -1,6 +1,5 @@
 @import 'base/normalize';
 @import 'base/other-resets';
-@import 'base/ie-compatibility';
 @import 'base/typography';
 @import 'utils/variables';
 @import 'utils/mixins';
@@ -16,7 +15,7 @@ html {
 
 body {
   font-family: 'Fira Sans', Fira, sans-serif;
-  background: $backgroundColor url("https://mallowmew.github.io/images/broken_noise.png") repeat;
+  background: $backgroundColor;
 }
 
 div {

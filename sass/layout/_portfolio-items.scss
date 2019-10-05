@@ -1,52 +1,49 @@
 .portfolio-item {
-  position: relative;
   margin: auto;
+  padding: 6px 0;
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
+  
+  .portfolio-item-description {
+    padding: 12px 0;
+    width: 100%;
+    background-color: transparentize($color: $dark, $amount: 0.1);
+
+    h1, h2, h3, p {
+      margin: 0 12px 0.6em 12px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      text-transform: none;
+    }
+
+    p {
+      color: $textColor;
+      font-size: 1.4rem;
+      text-align: justify;
+    }
+  }
 }
 
 .portfolio-item[data-state=closed] {
-  height:20vh;
+  height:30vh;
 
   .portfolio-item-description {
     display: none;
   }
 }
 
-.portfolio-item-description {
-  position: absolute;
-  bottom: 0;
-  padding: 12px 0;
-  padding-bottom: 42px;
-  width: 100%;
-  background-color: transparentize($color: $dark, $amount: 0.1);
 
-  h1, h2, h3, p {
-    margin: 0 12px 0.6em 12px;
-  }
-
-  h1 {
-    font-size: 2rem;
-    border-left: 1rem solid $textColor;
-    padding-left: 0.5rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-    text-transform: none;
-  }
-
-  p {
-    color: $textColor;
-    font-size: 1.4rem;
-    text-align: justify;
-  }
-}
 
 .portfolio-item-content {
   width: 100%;
-  height: 100%;
+  height: 30vh;
   overflow: hidden;
 }
 
