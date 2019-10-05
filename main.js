@@ -1,14 +1,13 @@
-var portfolioItems = document.querySelectorAll( '.portfolio-item' )
+const portfolioItems = document.querySelectorAll('.portfolio-item')
 
-portfolioItems.forEach( function( item ) {
-  item.setAttribute( 'data-state', 'closed' )
-  item.addEventListener( 'click', function() {
-    portfolioItems.forEach( function( innerItem ) {
-      innerItem.setAttribute( 'data-state', 'closed' )
+portfolioItems.forEach(item => {
+  item.setAttribute('data-state', 'closed')
+  item.addEventListener('click', e => {
+    portfolioItems.forEach(innerItem => {
+      innerItem.setAttribute('data-state', 'closed')
     })
-    item.setAttribute( 'data-state', item.getAttribute( 'data-state') === 'open' ? 'closed' : 'open' )
+    item.setAttribute('data-state', item.getAttribute('data-state') === 'open' ? 'closed' : 'open')
   })
-  console.log( item )
 })
 
-portfolioItems[0].setAttribute( 'data-state', 'open' )
+//portfolioItems[0].setAttribute('data-state', 'open')
