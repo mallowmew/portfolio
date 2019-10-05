@@ -8,7 +8,7 @@
   .portfolio-item-description {
     padding: 12px 0;
     width: 100%;
-    background-color: transparentize($color: $dark, $amount: 0.1);
+    background-color: $dark;
 
     h1, h2, h3, p {
       margin: 0 12px 0.6em 12px;
@@ -31,17 +31,9 @@
   }
 }
 
-.portfolio-item[data-state=closed] {
-  height:30vh;
-
-  .portfolio-item-description {
-    display: none;
-  }
-}
-
-.portfolio-item-content {
+.portfolio-item-image {
   width: 100%;
-  height: 30vh;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -49,10 +41,6 @@
   .portfolio-item {
     height: 506px;
     transition: height 300ms;
-  }
-
-  .portfolio-item-description {
-    transform: translate(0, 120px);
   }
 }
 
@@ -64,34 +52,5 @@
   .portfolio-item {
     height: 562px;
     transition: height 300ms;
-  }
-
-  .portfolio-item[data-state=closed]:before {
-    content:"";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    //background: transparentize($color: $tint, $amount: 0.8);
-    transition: background 96ms;
-  }
-
-  .portfolio-item[data-state=closed]:hover:before {
-    background: transparent;
-    transition: background 96ms;
-  }
-
-  .portfolio-item-description {
-    height: 33%;
-    z-index: 99;
-    transform: translate(0, 100%);
-    transition: transform 360ms ease-in;
-  }
-
-  .portfolio-item:hover .portfolio-item-description {
-    transform: translate(0, 0px);
-    transition: transform 360ms ease-out;
   }
 }
