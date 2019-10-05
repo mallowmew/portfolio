@@ -10,10 +10,6 @@ css/
 !.vscode/extensions.json
 .idea
 
-# Dev
-node_modules/
-css/
-
 # Windows 
 # thumbnail cache files
 Thumbs.db
