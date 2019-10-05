@@ -16,27 +16,28 @@ html {
 body {
   font-family: 'Fira Sans', Fira, sans-serif;
   background: $backgroundColor;
-}
-
-div {
-  font-size: 1.6rem;
   color: $textColor;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 500;
 }
 
 p, a {
-  margin: 0;
+  margin: 20px 0;
   font-family: 'Fira Sans Condensed' Fira, sans-serif;
+  font-weight: 300;
 }
 
 a:link {
   color: $linkColor;
   text-decoration-line: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 a:visited {
