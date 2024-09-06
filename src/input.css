@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Roboto.woff2) format("woff2");
+  }
+
+  @font-face{
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./fonts/FiraSans-Light.ttf) format("truetype");
+  } */
+
+  @font-face {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./fonts/FiraSans-Regular.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(./fonts/FiraSans-Medium.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./fonts/FiraSans-SemiBold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./fonts/FiraSans-Bold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(./fonts/FiraSans-ExtraBold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(./fonts/FiraSans-Black.ttf) format("truetype");
+  }
+}
