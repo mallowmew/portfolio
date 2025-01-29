@@ -1,0 +1,84 @@
+{
+    "projects": [
+        {
+            "title": "Games I Have Played",
+            "subtitle": "iO Academy Project 2: Collection App",
+            "category": "iO Academy",
+            "description": "The brief was to create a web app that can display a collection. I chose to make an app to track the videogames I have played.",
+            "link": "",
+            "repository": "https://github.com/mallowmew/games-i-have-played/",
+            "thumbnail": "project2-screenshot-2019-08-09.png",
+            "year": 2019
+        },
+        {
+            "title": "Who's a Good Puppy?!",
+            "subtitle": "iO Academy Project 3: JavaScript Game",
+            "category": "iO Academy",
+            "description": "My first group project at iO Academy - Build a maze game using HTML/CSS/JS.\nMove your mouse cursor to the end of the dog without touching the sides or any obstacles.",
+            "link": "https://mallowmew.github.io/io-2019-jul-maze/",
+            "repository": "https://github.com/mallowmew/io-2019-jul-maze",
+            "thumbnail": "project3-screenshot-2019-08-24.png",
+            "year": 2019
+        },
+        {
+            "title": "iO Academy Finance Calculator",
+            "subtitle": "iO Academy Module 6 Challenge",
+            "category": "iO Academy",
+            "description": "The challenge for this module was to use frontend technologies to develop a simple finance calculator page for iO Academy students.",
+            "link": "https://mallowmew.github.io/io-academy-finance-calculator-exercise/",
+            "repository": "https://github.com/mallowmew/mayden-finance-calculator/",
+            "thumbnail": "finance-calculator-screenshot-2019-10-05.png",
+            "year": 2019
+        },
+        {
+            "title": "iO Academy Online Aptitude Test",
+            "subtitle": "iO Academy Project 4",
+            "category": "iO Academy",
+            "description": "My second group project at iO Academy. We were tasked with continuing to develop an online aptitude test app for Mayden Academy to use in admissions.\nWe were given an existing frontend codebase to work with that had been developed by previous cohorts.",
+            "link": "",
+            "repository": "",
+            "thumbnail": "project4-screenshot-2019-10-05.png",
+            "year": 2019
+        },
+        {
+            "title": "Top Cat!",
+            "subtitle": "iO Academy Project 5",
+            "category": "iO Academy",
+            "description": "My third group project at iO Academy - We made an application that scrapes cat pics from an external API and lets you select a breed to look at.",
+            "link": "",
+            "repository": "",
+            "thumbnail": "project5-screenshot-2019-10-05.png",
+            "year": 2019
+        },
+        {
+            "title": "To Do List",
+            "subtitle": "iO Academy Exercise",
+            "category": "iO Academy",
+            "description": "This is a to-do app made as an exercise to practice making CRUD apps using the Slim PHP framework.",
+            "link": "",
+            "repository": "",
+            "thumbnail": "",
+            "date": 2019
+        },
+        {
+            "title": "Academy Portal",
+            "subtitle": "iO Academy Project 6",
+            "category": "iO Academy",
+            "description": "My fourth group project at iO Academy. We were given an existing codebase worked on by previous cohorts and asked to add features to it.\nThis was a full-stack project. The backend was in the Slim PHP framework.",
+            "link": "",
+            "repository": "",
+            "thumbnail": "project6-screenshot-2019-10-05.png",
+            "year": 2019
+        },
+        {
+            "title": "Pokémon Sumo",
+            "subtitle": "React Practice",
+            "category": "iO Academy",
+            "description": "Practising using React to create a simple web app demonstrating core React features and workflows.\nPokemon data fetched from PokéAPI.",
+            "link": "",
+            "repository": "https://github.com/mallowmew/pokemon-sumo-react",
+            "thumbnail": "",
+            "year": 2024
+        }
+    ]
+}
