@@ -377,10 +377,14 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --font-display-serif: 'Merriweather', 'serif';
+    --font-display-serif--font-variation-settings: 'wght' 400;
     --font-display: 'Merriweather Sans', 'sans-serif';
-    --font-display--font-variation-settings: 'wght' 600;
-    --font-body: 'Merriweather Sans', 'sans-serif';
+    --font-display--font-variation-settings: 'wght' 400;
+    --font-body: 'Open Sans', 'sans-serif';
     --font-body--font-variation-settings: 'wght' 400;
+    --font-link: 'Open Sans', 'sans-serif';
+    --font-link--font-variation-settings: 'wght' 600;
   }
 }
 @layer base {
@@ -599,6 +603,14 @@
     font-family: var(--font-display);
     font-variation-settings: var(--font-display--font-variation-settings);
   }
+  .font-display-serif {
+    font-family: var(--font-display-serif);
+    font-variation-settings: var(--font-display-serif--font-variation-settings);
+  }
+  .font-link {
+    font-family: var(--font-link);
+    font-variation-settings: var(--font-link--font-variation-settings);
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
@@ -621,16 +633,25 @@
   .text-yellow-600 {
     color: var(--color-yellow-600);
   }
-  .uppercase {
-    text-transform: uppercase;
-  }
 }
-@layer base {
-  @font-face {
-    font-family: "Merriweather Sans";
-    font-optical-sizing: auto;
-    src: url("/fonts/MerriweatherSans-VariableFont_wght.ttf") format("truetype");
-  }
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"), url("/fonts/Merriweather-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  font-weight: 400;
+  src: local("Merriweather Sans"), url("/fonts/MerriweatherSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: local("Open Sans"), url("/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 300 800;
+  src: local("Inter"), url("/fonts/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
 }
 @keyframes spin {
   to {

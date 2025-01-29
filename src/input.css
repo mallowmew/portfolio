@@ -1,32 +1,39 @@
 @import 'tailwindcss';
 
-@theme {
-  --font-display: 'Merriweather Sans', 'sans-serif';
-  --font-display--font-variation-settings: 'wght' 600;
-  --font-body: 'Merriweather Sans', 'sans-serif';
-  --font-body--font-variation-settings: 'wght' 400;
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"), url("/fonts/Merriweather-Regular.ttf") format("truetype");
 }
 
-@layer base {
-  /* *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor); */
+@font-face {
+  font-family: "Merriweather Sans";
+  font-weight: 400;
+  src: local("Merriweather Sans"), url("/fonts/MerriweatherSans-Regular.ttf") format("truetype");
+  /* font-weight: 300 800;
+  src: local("Merriweather Sans"), url("/fonts/MerriweatherSans-VariableFont_wght.ttf") format("truetype"); */
+}
 
-  /* @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/fonts/Roboto.woff2) format("woff2");
-  */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: local("Open Sans"), url("/fonts/OpenSans-Regular.ttf") format("truetype");
+  /* font-weight: 300 800;
+  src: url("/fonts/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype"); */
+}
 
-  @font-face {
-    font-family: "Merriweather Sans";
-    font-optical-sizing: auto;
-    src: url("/fonts/MerriweatherSans-VariableFont_wght.ttf") format("truetype");
-  }
+@font-face {
+  font-family: "Inter";
+  font-weight: 300 800;
+  src: local("Inter"), url("/fonts/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+}
 
+@theme {
+  --font-display-serif: 'Merriweather', 'serif';
+  --font-display-serif--font-variation-settings: 'wght' 400;
+  --font-display: 'Merriweather Sans', 'sans-serif';
+  --font-display--font-variation-settings: 'wght' 400;
+  --font-body: 'Open Sans', 'sans-serif';
+  --font-body--font-variation-settings: 'wght' 400;
+  --font-link: 'Open Sans', 'sans-serif';
+  --font-link--font-variation-settings: 'wght' 600;
 }

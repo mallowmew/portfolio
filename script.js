@@ -17,10 +17,10 @@ async function makeProjects() {
                     ${project.description}
                 </p>
                 <p class="my-3">
-                    <a class="text-yellow-600 font-display" href="${project.link}">Here</a>
+                    <a class="text-yellow-600 font-link" href="${project.link}">Here</a>
                 </p>
                 <p class="my-3">
-                    <a class="text-yellow-600 font-display" href="${project.repository}">Repository</a>
+                    <a class="text-yellow-600 font-link" href="${project.repository}">Repository</a>
                 </p>
             </div>
         </div>
