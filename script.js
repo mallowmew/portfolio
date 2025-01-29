@@ -12,15 +12,15 @@ async function makeProjects() {
             </div>
             <div>
                 <h1 class="text-4xl my-6 mt-12">${project.title}</h1>
-                <h2 class="text-xl font-semibold my-6">${project.subtitle}</h2>
+                <h2 class="text-xl font-display my-6">${project.subtitle}</h2>
                 <p class="my-3">
                     ${project.description}
                 </p>
                 <p class="my-3">
-                    <a class="text-yellow-600 font-semibold" href="${project.link}">Here</a>
+                    <a class="text-yellow-600 font-display" href="${project.link}">Here</a>
                 </p>
                 <p class="my-3">
-                    <a class="text-yellow-600 font-semibold" href="${project.repository}">Repository</a>
+                    <a class="text-yellow-600 font-display" href="${project.repository}">Repository</a>
                 </p>
             </div>
         </div>

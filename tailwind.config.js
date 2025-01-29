@@ -5,12 +5,5 @@ module.exports = {
     "./pages/**/*.{html,js}", 
     "./src/**/*.{html,js}"
   ],
-  theme: {
-    extend: {
-      fontFamily: {
-        'sans': ['Fira Sans', 'sans-serif']
-      }
-    },
-  },
   plugins: [],
 }
