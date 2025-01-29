@@ -11,9 +11,9 @@ async function makeProjects() {
                 <img src="images/${project.thumbnail}" />
             </div>
             <div>
-                <h1 class="text-4xl my-6 mt-12">${project.title}</h1>
+                <h1 class="text-4xl font-display my-6 mt-12">${project.title}</h1>
                 <h2 class="text-xl font-display my-6">${project.subtitle}</h2>
-                <p class="my-3">
+                <p class="my-3 font-body">
                     ${project.description}
                 </p>
                 <p class="my-3">

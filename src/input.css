@@ -1,10 +1,20 @@
-@config "../tailwind.config.js";
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --font-display: 'Merriweather Sans', 'sans-serif';
+  --font-display--font-variation-settings: 'wght' 600;
+  --font-body: 'Merriweather Sans', 'sans-serif';
+  --font-body--font-variation-settings: 'wght' 400;
+}
 
 @layer base {
+  /* *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor); */
+
   /* @font-face {
     font-family: "Roboto";
     font-style: normal;
@@ -16,15 +26,7 @@
   @font-face {
     font-family: "Merriweather Sans";
     font-optical-sizing: auto;
-    src: url("/fonts/MerriweatherSans-VariableFont_wght.ttf") format("truetype")
+    src: url("/fonts/MerriweatherSans-VariableFont_wght.ttf") format("truetype");
   }
 
-
-}
-
-@theme {
-  --font-display: "Merriweather Sans", "sans-serif";
-  --font-display--font-variation-settings: "wght" 600;
-  --font-body: "Merriweather Sans", "sans-serif";
-  --font-body--font-variation-settings: "wght" 400;
 }
