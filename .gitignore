@@ -1,4 +1,8 @@
 node_modules/
 
+# IDEs
+.helix
+.vscode
+
 # MacOS
 .DS_Store
