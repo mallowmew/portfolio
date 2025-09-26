@@ -12,6 +12,11 @@
   src: url('fonts/FiraSans-Regular.ttf');
 }
 
+@font-face {
+  font-family: "Fantasque Sans Mono";
+  src: url('fonts/FantasqueSansMono-Regular.woff');
+}
+
 *,
 ::before,
 ::after {
@@ -19,7 +24,7 @@
 }
 
 body {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fantasque Sans Mono", sans-serif;
   margin: 0;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
