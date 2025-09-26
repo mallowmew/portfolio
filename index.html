@@ -54,7 +54,7 @@
       <div class="" id="io-academy">
         <div class="">
           <h3>iO Academy</h3>
-          <p>Projects from the iO Academy Full-Stack bootcamp I attended in 2019:</p>
+          <p>Projects from the iO Academy Full-Stack bootcamp I attended in July 2019:</p>
         </div>
         <div class="small-card-container">
           <div class="small-card">
@@ -189,7 +189,10 @@
       <p>
         <a class="text-yellow-600 font-semibold" href="#top">back to top</a>
       </p>
-      <p>&copy; Cat Stone 2019-2024</p>
+      <p>&copy; Cat Stone 2019-<span id="footer-date">20XX</span></p>
+      <script>
+        document.querySelector("#footer-date").innerText = new Date().getFullYear().toString()
+      </script>
     </div>
   </footer>
 </body>
